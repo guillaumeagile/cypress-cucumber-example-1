@@ -11,6 +11,23 @@ npm install
 npm test
 ```  
 
+# run the GUI
+You can now open Cypress from your project root in either of the following ways:
+
+By going through the long way using the full path, that is by running the following command from your terminal ./node_modules/.bin/cypress open
+With the aid of a shortcut using npm bin. This is done by running $(npm bin)/cypress open
+With the use of npx, to do this you have to run npx cypress open.
+Finally, you can open Cypress using yarn by running yarn run cypress open
+
+# Folders
+When you add a new project and run Cypress the first time, it scaffolds a suggested folder structure:
+
+Fixtures are external pieces of static data that can be used by your tests. You would typically use them with the cy.fixture() command and most often when you’re stubbing Network Requests.
+Test files are located in cypress/integration by default. To see an example of every command used in Cypress, open the example folder within your integration folder.
+Plugin files enable you to tap into, modify, or extend the internal behavior of Cypress. By default Cypress includes the plugins file cypress/plugins/index.js before every single spec file it runs.
+Support files are a great place to put reusable behavior such as Custom Commands or global overrides that you want to be applied and available to all of your spec files.
+First test
+
 # Tags usage
 
 ### Tagging tests

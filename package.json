@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run --spec \"**/*.feature\"",
+    "testA": "cypress run --headed --spec \"**/*.feature\"",
     "test:all": "cypress run --spec \"**/*.features\""
   },
   "repository": {
@@ -23,10 +24,12 @@
   },
   "homepage": "https://github.com/TheBrainFamily/cypress-cucumber-example#readme",
   "dependencies": {
-    "cypress": "^4.9.0",
-    "cypress-cucumber-preprocessor": "^2.5.0"
+    "cypress-cucumber-preprocessor": "^4.1.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress": "^7.2.0"
   }
 }
